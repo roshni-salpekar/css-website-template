@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+  background: #3aaf9f;
+}
+
+.wrapper {
+  max-width: 350px;
+  width: 100%;
+  height: auto;
+  background: #fff;
+  padding: 60px 45px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+}
+
+.wrapper .title {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+  color: #3aaf9f;
+}
+
+.wrapper .social_media {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.wrapper .social_media .item {
+  width: 35px;
+  height: 35px;
+  border: 2px solid #eeeeee;
+  margin: 0 5px;
+  text-align: center;
+  line-height: 35px;
+  border-radius: 50px;
+  cursor: pointer;
+  color: #eeeeee;
+  transition: all 0.5s ease;
+}
+
+.wrapper .social_media .item:hover {
+  color: #3aaf9f;
+  border-color: #3aaf9f;
+}
+
+.wrapper .form .input_fields {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.wrapper .form .input_fields .input {
+  width: 100%;
+  padding: 12px;
+  padding-left: 30px;
+  border: none;
+  background: #eeeeee;
+}
+
+.wrapper .form .btn {
+  width: 70%;
+  text-align: center;
+  margin: 20px auto 0;
+  background: #3aaf9f;
+  padding: 12px;
+  border-radius: 25px;
+}
+
+.wrapper .form .btn a {
+  color: #fff;
+}
+
+.wrapper .form .input_fields i {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #1d2120;
+  font-size: 14px;
+}
+
+::-webkit-input-placeholder {
+  color: #1d2120;
+}
