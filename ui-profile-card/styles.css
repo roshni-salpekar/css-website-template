@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #424c55;
+  color: #424c55;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+}
+
+p {
+  font-weight: 400;
+}
+
+span,
+.btn {
+  font-weight: 900;
+}
+
+/* To place wrapper div in the center of the browser */
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* set container height and width */
+.container {
+  width: 350px;
+  height: 500px;
+  background: #fff;
+  border-radius: 5px;
+}
+
+/* set profile card width 100% and height 50%, considering the container width and height */
+.profile-card {
+  width: 100%;
+  height: 50%;
+  background: #75ceb6;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  position: relative;
+}
+
+.profile-card .img-container {
+  width: 105px;
+  height: 105px;
+  position: relative;
+}
+
+.profile-card .img-container img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 30%;
+  left: 120%;
+  border-radius: 50%;
+}
+
+.role {
+  position: absolute;
+  bottom: 35%;
+  left: 34%;
+}
+
+.btn {
+  position: absolute;
+  bottom: 8%;
+  left: 35%;
+  border: 2px solid #fff;
+  padding: 8px 30px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 1s ease;
+}
+
+.btn:hover {
+  background: #fff;
+}
+
+/* considering container width and height */
+.data {
+  width: 100%;
+  height: 13%;
+  background: #9adbc9;
+}
+
+.data-content {
+  width: 33.3%;
+  float: left;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.quote {
+  padding: 15px 30px;
+}
+
+.quote p {
+  padding-bottom: 10px;
+}
