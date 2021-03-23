@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".content .tab-content").hide();
+
+        $("ul li").click(function () {
+          $("ul li").removeClass("active");
+          $(this).addClass("active");
+
+          var current = $(this).attr("data-list");
+          $(".content .tab-content").hide();
+          $("." + current).show();
+        });
+      });
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="tabs">
+        <ul>
+          <li data-list="tab-1">
+            <img src="cycle.png" alt="cycle" />
+            <p>Biscycle</p>
+          </li>
+          <li data-list="tab-2">
+            <img src="bike.png" alt="bike" />
+            <p>Bike</p>
+          </li>
+          <li data-list="tab-3">
+            <img src="car.png" alt="car" />
+            <p>Car</p>
+          </li>
+          <li data-list="tab-4">
+            <img src="truck.png" alt="truck" />
+            <p>Truck</p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="content">
+        <div class="tab-content tab-1">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+          quaerat libero ut sit molestias quos blanditiis doloribus ea commodi
+          recusandae, iusto aut numquam, itaque modi quo vero. Assumenda nostrum
+          amet, alias architecto commodi velit odio. Quod, nam saepe?
+          Praesentium facilis porro mollitia illum quam veritatis excepturi
+          ducimus incidunt itaque id magnam tempore, voluptatibus minima vitae.
+          Officiis, autem molestias. Itaque ex earum impedit ad placeat autem
+          commodi possimus molestias distinctio aliquam.
+        </div>
+        <div class="tab-content tab-2">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
+          aliquam quibusdam nihil molestias nostrum, dignissimos illum
+          excepturi! Et atque cumque natus deserunt, magni adipisci quidem
+          fugiat accusantium ipsam expedita obcaecati quisquam soluta incidunt
+          iure aliquid. Perspiciatis at beatae odio provident cupiditate
+          voluptas porro pariatur repellat debitis corporis, iste, et velit!
+        </div>
+        <div class="tab-content tab-3">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+          veritatis excepturi error cupiditate facere tempore sapiente rem odio
+          necessitatibus corporis. Aliquam cumque a est soluta harum velit nobis
+          iste quaerat exercitationem! A natus accusamus sequi.
+        </div>
+        <div class="tab-content tab-4">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit
+          perspiciatis recusandae dicta numquam, architecto, ipsum minima rerum,
+          veniam aut suscipit maiores ducimus quaerat nemo quis ipsa. Reiciendis
+          voluptate laudantium totam illum neque soluta molestias,
+          exercitationem enim iure facere nemo, corrupti consequatur ea, qui
+          voluptatem. Consectetur iure necessitatibus minima neque, corporis
+          fugit earum qui excepturi commodi quam ipsa ea modi aut culpa
+          molestiae quidem dolores ab veritatis dolor tempora laborum explicabo
+          accusamus! Aspernatur, deserunt similique. Explicabo.
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
